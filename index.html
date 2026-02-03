@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo da moda | Universo da Moda</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --rosa-claro: #fff5f7;
+            --rosa-accent: #f8d7da;
+            --texto: #5a5a5a;
+        }
+        body { font-family: 'Poppins', sans-serif; background-color: var(--rosa-claro); color: var(--texto); }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; color: #4a4a4a; }
+        
+        .navbar { background-color: #fff !important; border-bottom: 1px solid var(--rosa-accent); }
+        .btn-pink { background-color: var(--rosa-accent); border: none; color: #4a4a4a; }
+        .btn-pink:hover { background-color: #f1c0c4; }
+
+        .hero { padding: 80px 0; text-align: center; background: white; margin-bottom: 50px; }
+        .card-fashion { border: none; border-radius: 15px; overflow: hidden; background: #fff; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: 0.3s; }
+        .card-fashion:hover { transform: translateY(-5px); }
+        .img-topic { height: 250px; object-fit: cover; width: 100%; }
+        
+        footer { background: white; padding: 40px 0; border-top: 1px solid var(--rosa-accent); margin-top: 50px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#" style="letter-spacing: 2px;">Mundo da<span style="color: #ebaeb4;">Moda</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navMenu">
+                    <form class="d-flex mx-auto w-50" role="search">
+                        <input class="form-control me-2 rounded-pill border-light-subtle" type="search" placeholder="Pesquisar tendências..." aria-label="Search">
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero shadow-sm rounded-4">
+            <h1 class="display-4"> Universo Fashion</h1>
+            <p class="lead">Onde a história encontra o luxo e a cultura digital.</p>
+        </section>
+
+        <div class="row g-4">
+            <article class="col-md-6 col-lg-4">
+                <div class="card-fashion h-100">
+                    <img src="historia da moda.webp" class="img-topic" alt="História">
+                    <div class="card-body p-4">
+                        <h3>História da Moda</h3>
+                        <p class="small">Uma viagem no tempo, desde o surgimento dos tecidos no Egito Antigo até as revoluções do século XX.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="col-md-6 col-lg-4">
+                <div class="card-fashion h-100">
+                    <img src="nichos da moda.jpg" class="img-topic" alt="Nichos">
+                    <div class="card-body p-4">
+                        <h3>Alta Costura & Fast Fashion</h3>
+                        <p class="small">O contraste entre o luxo artesanal das "Maisons" e a velocidade de produção das gigantes do varejo.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="col-md-6 col-lg-4">
+                <div class="card-fashion h-100">
+                    <img src="tendencias e impacto cultural.webp" class="img-topic" alt="Tendências">
+                    <div class="card-body p-4">
+                        <h3>Tendências & Cultura</h3>
+                        <p class="small">Como o comportamento social e a tecnologia ditam o que vamos vestir na próxima estação.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="col-md-6 col-lg-4">
+                <div class="card-fashion h-100">
+                    <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=600" class="img-topic" alt="Estilistas">
+                    <div class="card-body p-4">
+                        <h3>Estilistas de Impacto</h3>
+                        <p class="small">Nomes como Chanel, Dior e McQueen que mudaram a forma como o mundo enxerga o corpo e o vestuário.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="col-md-6 col-lg-4">
+                <div class="card-fashion h-100">
+                    <img src="impacto na tv e no cinema.png" class="img-topic" alt="Cinema">
+                    <div class="card-body p-4">
+                        <h3>Moda na TV & Cinema</h3>
+                        <p class="small">O figurino como ferramenta narrativa e como as telas imortalizam peças icônicas da moda.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="col-md-6 col-lg-4">
+                <div class="card-fashion h-100">
+                    <img src="revistas3.jfif" class="img-topic" alt="Revistas">
+                    <div class="card-body p-4">
+                        <h3>Revistas de Moda</h3>
+                        <p class="small">A curadoria editorial das "bíblias" da moda, como Vogue e Elle, no impresso e no digital.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="col-12">
+                <div class="card-fashion">
+                    <div class="row g-0">
+                        <div class="col-md-6">
+                            <img src="https://images.unsplash.com/photo-1544441893-675973e300bb?q=80&w=800" class="img-topic h-100" alt="Marcas">
+                        </div>
+                        <div class="col-md-6 p-5 d-flex flex-column justify-content-center">
+                            <h3>Marcas Globais</h3>
+                            <p>Das históricas grifes europeias às marcas contemporâneas sustentáveis. Conheça as gigantes que movem a economia da moda mundial.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer class="text-center">
+        <p class="mb-0 fw-light">© 2026 Fashion Soft - Design Minimalista & Elegante</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
