@@ -11,13 +11,13 @@ db = MySQLdb.connect(
 )
 
 @app.route("/")
-def paginaprincipal():
-    return render_template("index.html")
+def index():
+    return render_template("login.html")
 
 
-@app.route("/paginaprincipal")
+@app.route("/index")
 def login():
-    return render_template("paginaprincipal.html")
+    return render_template("index.html")
 
 @app.route("/registrar", methods=["POST"])
 def registrar():
@@ -30,7 +30,7 @@ def registrar():
     usuario = cursor.fetchone()
 
     if usuario:
-        return redirect("/paginaprincipal")
+        return redirect("/index")
 
     sql = "INSERT INTO usuarios (nome, email, senha) VALUES (%s, %s, %s)"
     valores = (nome, email, senha)
@@ -38,7 +38,7 @@ def registrar():
     cursor.execute(sql, valores)
     db.commit()
 
-    return redirect("/paginaprincipal")
+    return redirect("/index")
 
 
 if __name__ == "__main__":
